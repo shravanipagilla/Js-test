@@ -1,17 +1,15 @@
 class product{
-constructor(NAME,PRICE){
-    this.name=NAME;
-    this.price=PRICE;
+constructor(name,price){
+    this.name=name;
+    this.price=price;
 }
-addperson(person){
-    this.peter=person;
-
+logProduct(){
+    return this.name + ' is ' +  this.price +' kr '
 }
 }
-//const newdata= new product.addperson("peter");
-
-//const first = new newdata("window",1200,"peter")
 const newProduct= new product("window",1200);
-//const thihs= new newProduct.addperson("peter")
-console.log(newProduct);
-// console.log("this is data"+ newProduct.addperson());
+
+const renderProduct = newProduct.logProduct()
+
+console.log('renderProduct: ', renderProduct)
+
